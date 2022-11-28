@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+//components
+import { StockOverview } from "./pages/StockOverviewPage";
+import { StockDetail } from "./pages/StockDetailPage";
+import { Container } from "@mui/system";
+
+//context
+import { WatchListContextProvider } from "./context/watchListContext";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <WatchListContextProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<StockOverview />} />
+            <Route path="/detail/:symbol" element={<StockDetail />} />
+          </Routes>
+        </BrowserRouter>
+      </WatchListContextProvider>
+    </main>
   );
 }
 
