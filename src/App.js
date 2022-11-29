@@ -1,6 +1,6 @@
 import "./App.css";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 //components
 import { StockOverview } from "./pages/StockOverviewPage";
@@ -14,12 +14,12 @@ function App() {
   return (
     <main>
       <WatchListContextProvider>
-        <BrowserRouter>
+        <HashRouter>
           <Routes>
             <Route path="/" element={<StockOverview />} />
             <Route path="/detail/:symbol" element={<StockDetail />} />
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </WatchListContextProvider>
     </main>
   );
