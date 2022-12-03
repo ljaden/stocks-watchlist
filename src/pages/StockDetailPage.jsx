@@ -7,6 +7,8 @@ import api from "../apis/api";
 
 //components
 import Container from "@mui/material/Container";
+import Grid from "@mui/material/Grid";
+import CirculatProgress from "@mui/material/CircularProgress";
 import { StockChart } from "../components/StockChart";
 import { CompanyNews } from "../components/CompanyNews";
 import { CompanyInfo } from "../components/CompanyInfo";
@@ -76,14 +78,20 @@ export const StockDetail = () => {
     fetchData();
   }, [symbol]);
 
+  if (chartData === null) {
+    return (
+      <Grid container justifyContent={"center"} sx={{ mt: 5 }}>
+        <CirculatProgress size={80} sx={{ justifyContent: "center" }} />
+      </Grid>
+    );
+  }
+
   return (
     <>
       <ButtonAppBar />
       <Container>
-        {chartData && (
-          <CompanyInfo symbol={symbol} currentPrice={chartData.day.at(-1).y} />
-        )}
-        {chartData && <StockChart chartData={chartData} symbol={symbol} />}
+        <CompanyInfo symbol={symbol} currentPrice={chartData.day.at(-1).y} />
+        <StockChart chartData={chartData} symbol={symbol} />
         <CompanyNews symbol={symbol} />
       </Container>
     </>
