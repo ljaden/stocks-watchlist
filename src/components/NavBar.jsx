@@ -14,7 +14,7 @@ export default function ButtonAppBar() {
       <AppBar position="static">
         <Toolbar>
           <IconButton
-            href="/"
+            href="/stocks-watchlist/"
             size="large"
             edge="start"
             color="inherit"
