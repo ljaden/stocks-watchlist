@@ -5,7 +5,6 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 //components
 import { StockOverview } from "./pages/StockOverviewPage";
 import { StockDetail } from "./pages/StockDetailPage";
-import { Container } from "@mui/system";
 
 //context
 import { WatchListContextProvider } from "./context/watchListContext";
