@@ -4,15 +4,18 @@ import { useNavigate } from "react-router-dom";
 import api from "../apis/api";
 
 //mui
-import Container from "@mui/material/Container";
-import { Grid, Typography } from "@mui/material";
+import {
+  Container,
+  Grid,
+  Typography,
+  IconButton,
+  Avatar,
+  Tooltip,
+} from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
-import { IconButton } from "@mui/material";
 import DeleteIcon from "@mui/icons-material/Delete";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
-import Avatar from "@mui/material/Avatar";
-import Tooltip from "@mui/material/Tooltip";
 
 //context
 import { WatchListContext } from "../context/watchListContext";

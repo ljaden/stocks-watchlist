@@ -1,10 +1,11 @@
 import { useState } from "react";
 
+// charting library
 import Chart from "react-apexcharts";
 
 // mui Toggle
-import ToggleButton from "@mui/material/ToggleButton";
-import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
+import { ToggleButton } from "@mui/material/";
+import { ToggleButtonGroup } from "@mui/material/";
 
 export const StockChart = ({ chartData, symbol }) => {
   const [chartInterval, setChartInterval] = useState("day");

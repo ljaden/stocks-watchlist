@@ -11,7 +11,6 @@ export const CompanyInfo = ({ symbol, currentPrice }) => {
   const [companyInfo, setCompanyInfo] = useState(null);
 
   useEffect(() => {
-    // console.log(currentPrice, "currentprice from companyInfo");
     let isMounted = true;
     const fetchData = async () => {
       try {
@@ -20,7 +19,7 @@ export const CompanyInfo = ({ symbol, currentPrice }) => {
             symbol: symbol,
           },
         });
-        console.log(data, "data");
+        // console.log(data, "data");
         if (isMounted) {
           setCompanyInfo(data);
         }

@@ -2,9 +2,7 @@ import { useState, useEffect, useContext } from "react";
 import api from "../apis/api";
 
 //mui
-import Grid from "@mui/material/Grid";
-import TextField from "@mui/material/TextField";
-import Autocomplete from "@mui/material/Autocomplete";
+import { Grid, TextField, Autocomplete } from "@mui/material/";
 
 //context
 import { WatchListContext } from "../context/watchListContext";

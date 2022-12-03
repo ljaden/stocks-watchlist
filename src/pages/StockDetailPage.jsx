@@ -6,8 +6,7 @@ import { useParams } from "react-router-dom";
 import api from "../apis/api";
 
 //components
-import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid";
+import { Container, Grid } from "@mui/material/";
 import CirculatProgress from "@mui/material/CircularProgress";
 import { StockChart } from "../components/StockChart";
 import { CompanyNews } from "../components/CompanyNews";
