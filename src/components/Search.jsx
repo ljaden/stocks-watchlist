@@ -33,7 +33,6 @@ export const Search = () => {
             (stock.type === "Common Stock" || stock.type === "ETP") &&
             !stock.symbol.includes(".")
         );
-        console.log(results);
         if (isMounted) {
           setSearchResults(results);
         }

@@ -28,8 +28,7 @@ export const CompanyNews = ({ symbol }) => {
           },
         });
 
-        // setNews(data.slice(0, 5));
-        setNews(data);
+        setNews(data.slice(0, 10));
       } catch (err) {
         console.log(err);
       }
@@ -74,7 +73,7 @@ export const CompanyNews = ({ symbol }) => {
           </Box>
           <Box sx={{ maxWidth: 800, width: "100%", p: 2 }}>
             Source:
-            <a href={news[activeStep]?.source} target="_blank" rel="noreferrer">
+            <a href={news[activeStep]?.url} target="_blank" rel="noreferrer">
               {news[activeStep]?.source}
             </a>
           </Box>
