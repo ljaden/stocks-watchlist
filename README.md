@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Stock Watcher
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Stock Watcher is a simple web application that allows users to search for their favorite stocks and add them to a watch list. The application provides real-time stock prices,daily and weekly price charts, and recent news articles from sites like <b>YahooFinance</b>,<b>SeekingAlpha</b>, and <b>MarketWatch</b>.
 
-## Available Scripts
+## Getting Started
 
-In the project directory, you can run:
+[Live Site](https://ljaden.github.io/stocks-watchlist/)
 
-### `yarn start`
+There is no signups required to use Stock Watcher. To get you started, your watch list already has 4 stocks($META,$AMZN,$NFLX,$GOOGL) included. Simply search the ticker symbol of your stock of choice in the search bar and a drop down menu will appear if the ticker is found. Double clicking on the stock within your watch list will give more information on the asset.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Real-time stock prices
+- Price history
+- 24H & 7D Price graphs
+- Up-to-date news articles
 
-### `yarn test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [React](https://react.dev/): A JavaScript library for building UI
+- [MUI](https://mui.com): A library of React UI components
+- [ApexCharts](https://apexcharts.com/): A charting library that provides interactive and responsive charts
+- [GH Pages](https://pages.github.com/): Website Hosting
 
-### `yarn build`
+## APIs
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[Finnhub](https://finnhub.io/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- All financial data such as price,ticker, and news were provided by the free-tier API by Finnhub
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[Financial Modelin Prep](https://site.financialmodelingprep.com/)
 
-### `yarn eject`
+- Stock icons/images were sourced from FMP
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## License
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License. Check out [LICENSE](https://mit-license.org/) for details.
